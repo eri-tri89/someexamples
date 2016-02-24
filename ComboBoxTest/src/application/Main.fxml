@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.MainController">
+   <children>
+      <SplitPane dividerPositions="0.5" prefHeight="402.0" prefWidth="402.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <items>
+            <AnchorPane prefHeight="400.0" prefWidth="400.0">
+               <children>
+                  <ComboBox fx:id="comboBox" layoutX="125.0" layoutY="14.0" prefWidth="150.0" promptText="Select word" />
+                  <ListView fx:id="listView" layoutX="100.0" layoutY="58.0" prefHeight="300.0" prefWidth="200.0" />
+                  <Button fx:id="add" layoutX="174.0" layoutY="358.0" mnemonicParsing="false" onAction="#addWordToList" text="Add" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="cFolderBtn" layoutX="166.0" layoutY="14.0" mnemonicParsing="false" onAction="#addFilesToList" text="Choose Folder" />
+                  <ListView fx:id="pathList" layoutX="21.0" layoutY="57.0" prefHeight="317.0" prefWidth="355.0" />
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
