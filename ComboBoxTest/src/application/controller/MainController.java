@@ -56,22 +56,20 @@ public class MainController {
 	@FXML
 	public void addFilesToList(ActionEvent event) {
 		File dir = new DirectoryChooser().showDialog(cFolderBtn.getParent().getScene().getWindow());
-		if(dir != null){
+		if (dir != null) {
 			Collection<String> all = new TreeSet<String>();
 			try (DirectoryStream<Path> ds = Files.newDirectoryStream(dir.toPath())) {
 				for (Path child : ds) {
 					all.add(child.toString());
-					if (Files.isDirectory(child)) {
-						ObservableList<String> pList = FXCollections.observableArrayList();
-						pList.addAll(all);
-						pathList.setItems(pList);
-					}
+					ObservableList<String> pList = FXCollections.observableArrayList();
+					pList.addAll(all);
+					pathList.setItems(pList);
 				}
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
 		}
-		
+
 	}
 
 }
