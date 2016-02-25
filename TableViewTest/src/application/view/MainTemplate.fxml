@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.controller.MainController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane>
+               <children>
+                  <Button fx:id="addBtn" mnemonicParsing="false" onAction="#addFilesToTable" prefHeight="25.0" prefWidth="400.0" text="Add files" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="374.0" prefWidth="400.0">
+               <children>
+                  <TableView fx:id="tableView" prefHeight="374.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="dateCol" editable="false" minWidth="-1.0" prefWidth="159.0" sortable="false" text="Date" />
+                      <TableColumn fx:id="fileCol" editable="false" minWidth="-1.0" prefWidth="485.0" sortable="false" text="File Path" />
+                        <TableColumn fx:id="stateCol" editable="false" minWidth="-1.0" prefWidth="154.0" sortable="false" text="State" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
