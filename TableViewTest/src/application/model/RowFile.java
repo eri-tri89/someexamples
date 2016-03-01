@@ -11,22 +11,22 @@ public class RowFile extends File {
 	
 	private SimpleStringProperty datepr, pathpr, statepr;
 	
-	private State state;
+	private RowState state;
 	
 	public RowFile(String pathname) {
 		super(pathname);
 		SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");		
 		this.datepr = new SimpleStringProperty(sdf.format(this.lastModified()));
 		this.pathpr = new SimpleStringProperty(this.getPath().toString());
-		this.state = State.NO_SELECTED;
+		this.state = RowState.NO_SELECTED;
 		this.statepr = new SimpleStringProperty(state.toString());		
 	}
 
-	public State getState() {
+	public RowState getState() {
 		return state;
 	}
 
-	public void setState(State state) {
+	public void setState(RowState state) {
 		this.state = state;
 		statepr.set(state.toString());
 	}	
