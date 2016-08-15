@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">PictureViewer</string>
+    <string name="simpleFragStr">Simple Fragment</string>
+    <string name="multiFragStr">Multiple Fragment</string>
+    <string name="viewPagerFragStr">Fragments with View Pager</string>
+    <string name="recycleViewStr">Recycle View</string>
+
+    <!-- Simple Fragment -->
+    <string name="one_dog">one dog</string>
+    <string name="one_dog_btn">Click me!</string>
+
+    <!-- Multiple Fragment -->
+    <string name="multi_one_dog">one dog</string>
+    <string name="multi_one_dog_btn">Click me only!</string>
+    <string name="multi_two_dogs">two dogs</string>
+    <string name="multi_two_dogs_btn">Click us both!</string>
+    <string name="multi_three_dogs">three dogs</string>
+    <string name="multi_three_dogs_btn">Click all of us!</string>
+    <string name="pager_image_view">All dogs</string>
+
+    <string name="pager_text_view">Page number: </string>
+    <string name="icon_number">icon number</string>
+    <string name="recycler_activity_title">RecyclerView Example</string>
+    <string name="picasso_iv_description">Image from internet</string>
+
+
+</resources>
